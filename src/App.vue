@@ -38,7 +38,7 @@
       <div class="grid">
         <div class="icon-card"
              v-for="size in sizes">
-          <PlatformIcon icon="platform-ui"
+          <PlatformIcon icon="rocket"
                         :size="size" />
           <span>
             <pre>{{ size }}</pre>
@@ -56,7 +56,7 @@
       <pre tabindex="0"><code>&lt;PlatformIcon icon="rocket" color="red" /&gt;</code></pre>
       <div class="grid">
         <div class="icon-card">
-          <PlatformIcon icon="platform-ui"
+          <PlatformIcon icon="rocket"
                         size="2xl"
                         color="red" />
           <span>
@@ -64,7 +64,7 @@
           </span>
         </div>
         <div class="icon-card">
-          <PlatformIcon icon="platform-ui"
+          <PlatformIcon icon="rocket"
                         size="2xl"
                         color="var(--green)" />
           <span>
@@ -72,7 +72,7 @@
           </span>
         </div>
         <div class="icon-card">
-          <PlatformIcon icon="platform-ui"
+          <PlatformIcon icon="rocket"
                         size="2xl"
                         color="#0000FF" />
           <span>
@@ -81,7 +81,7 @@
         </div>
 
         <div class="icon-card">
-          <PlatformIcon icon="platform-ui"
+          <PlatformIcon icon="rocket"
                         size="2xl"
                         class="rebecca-purple" />
           <span>
