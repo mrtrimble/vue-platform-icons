@@ -14,7 +14,7 @@
         Icons can be included with the <code>&lt;PlatformIcon /&gt;</code> component and
         passing in the name of the icon through the <code>icon</code> prop, such as:
       </p>
-      <pre><code>&lt;PlatformIcon icon="rocket" /&gt;</code></pre>
+      <pre tabindex="0"><code>&lt;PlatformIcon icon="rocket" /&gt;</code></pre>
 
       <div class="grid">
         <div class="icon-card"
@@ -34,7 +34,7 @@
         By default, icons will be the size of relative text. Icons can be resized by passing in a size to the
         <code>size</code> prop:
       </p>
-      <pre><code>&lt;PlatformIcon icon="rocket" size="xl" /&gt;</code></pre>
+      <pre tabindex="0"><code>&lt;PlatformIcon icon="rocket" size="xl" /&gt;</code></pre>
       <div class="grid">
         <div class="icon-card"
              v-for="size in sizes">
@@ -53,7 +53,7 @@
         custom properties into the <code>color</code> prop. CSS classes can also be added to the
         <code>&lt;PlatformIcon /&gt;</code> component.
       </p>
-      <pre><code>&lt;PlatformIcon icon="rocket" color="red" /&gt;</code></pre>
+      <pre tabindex="0"><code>&lt;PlatformIcon icon="rocket" color="red" /&gt;</code></pre>
       <div class="grid">
         <div class="icon-card">
           <PlatformIcon icon="platform-ui"
