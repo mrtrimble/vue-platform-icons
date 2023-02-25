@@ -31,7 +31,8 @@
     <section>
       <h2>Sizes</h2>
       <p>
-        By default, icons will be the size of relative text. Icons can be resized by passing in a size to the <code>size</code> prop:
+        By default, icons will be the size of relative text. Icons can be resized by passing in a size to the
+        <code>size</code> prop:
       </p>
       <pre><code>&lt;PlatformIcon icon="rocket" size="xl" /&gt;</code></pre>
       <div class="grid">
@@ -173,6 +174,8 @@ main {
 
   pre {
     padding-block: 0.5rem;
+    width: 100%;
+    overflow: scroll;
 
     code {
       padding: 0.5rem;
