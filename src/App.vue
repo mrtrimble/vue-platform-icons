@@ -90,6 +90,37 @@
         </div>
       </div>
     </section>
+    <section>
+      <h2>Examples</h2>
+      <div class="grid">
+        <div class="icon-card">
+          <button class="button">
+            <PlatformIcon icon="clock" /> Choose Time
+          </button>
+          <span><pre>.button</pre></span>
+        </div>
+        <div class="icon-card">
+          <div class="icon-menu">
+            <div class="icon-menu__item">
+              <a class="icon-menu__action">
+                <PlatformIcon icon="edit" title="Edit Item" />
+              </a>
+            </div>
+            <div class="icon-menu__item">
+              <a class="icon-menu__action">
+                <PlatformIcon icon="clock" title="Choose Time" />
+              </a>
+            </div>
+            <div class="icon-menu__item">
+              <a class="icon-menu__action">
+                <PlatformIcon icon="trash" title="Delete Item" />
+              </a>
+            </div>
+          </div>
+          <span><pre>.icon-menu</pre></span>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -234,4 +265,59 @@ main {
     }
   }
 }
-</style>
+
+.button {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 5rem;
+  color: #666;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  padding: .25rem 1rem;
+  transition: .2s;
+  white-space: nowrap;
+  gap: 0.25rem;
+  font-size: var(--size-base);
+
+  &:hover {
+    background-color: #c3552a;
+    border-color: initial;
+    color: #fff;
+  }
+}
+
+.icon-menu {
+  align-items: center;
+  display: flex;
+}
+
+.icon-menu__item:first-of-type {
+  padding-left: 0;
+}
+
+.icon-menu__item {
+  border-right: 1px solid #999;
+}
+
+.icon-menu__item:last-of-type {
+  border-right: none;
+  padding-right: 0;
+}
+
+.icon-menu__action {
+  font-size: 16px;
+  color: #b3b3b3;
+
+  >svg {
+    transition: 0.2s ease;
+    margin-inline:0.25em;
+  }
+}
+
+.icon-menu__action:hover {
+  >svg {
+    transform: scale(1.1);
+  }
+}</style>

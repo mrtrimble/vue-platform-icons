@@ -75,7 +75,7 @@ $sizes: (
 
 svg {
   display: inline-flex;
-  height: var(--step-0);
+  height: var(--step-1);
   aspect-ratio: 1;
   overflow: visible;
   background: transparent;
