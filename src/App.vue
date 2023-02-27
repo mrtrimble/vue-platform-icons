@@ -122,6 +122,9 @@
       </div>
     </section>
   </main>
+  <footer>
+    <p>Made with <PlatformIcon icon="heart" title="love" /> for <a href="https://www.rimdev.io/">RIMdev</a></p>
+  </footer>
 </template>
 
 <script setup>
@@ -165,10 +168,12 @@ body {
   background: #f5f4f8;
   font-family: 'Figtree', sans-serif;
   color: #333;
-  padding-block: 1.5rem;
+  margin: 0;
+  padding:0;
 }
 
 header {
+  margin-block-start: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +211,7 @@ main {
   pre {
     padding-block: 0.5rem;
     width: 100%;
-    overflow: scroll;
+    overflow-y: auto;
 
     code {
       padding: 0.5rem;
@@ -307,7 +312,6 @@ main {
 }
 
 .icon-menu__action {
-  font-size: 16px;
   color: #b3b3b3;
 
   >svg {
@@ -320,4 +324,23 @@ main {
   >svg {
     transform: scale(1.1);
   }
-}</style>
+}
+
+footer{
+  margin-block-start:1rem;
+  padding-block: 2em;
+  display:grid;
+  place-content: center;
+  background: var(--platformui-purple);
+  color: white;
+  p{
+    display: inline-flex;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+  a{
+    color: white;
+  }
+}
+
+</style>
